@@ -1,0 +1,125 @@
+/*!
+	TIMELINE 0.98
+	Designed and built by Zach Wise at VeriteCo
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    http://www.gnu.org/licenses/
+
+*/
+
+/*	THEME DARK
+----------------------------------------------------- */
+	//GFX
+	.base-sprite() {
+		background-image: url(themes/timeline-dark.png);
+	}
+	// COLORS
+	@color-base:					#1A1A1A;
+	@color-line: 					#333; //#414141;
+	@color-line-hover: 				#666;
+	@color-dark:					#FFF;
+	@color-dark-second: 			#AAA;
+	@color-dark-third: 				#AAA;
+	@color-dark-fourth: 			#999;
+	@color-dark-fifth: 				#E3E3E3;
+	@color-background-dark:			#262626;
+	// COLOR THEME
+	@color-theme:					#0BD4E3;
+	
+/*	BASE
+----------------------------------------------------- */
+
+// CSS Reset
+@import "../Reset.less";
+
+// Core variables and mixins
+@import "../Font.Default.less";
+@import "../Variables.less";
+@import "../Mixins.less"; 
+@import "../GFX.less";
+
+// Grid system and page structure
+@import "../VMM.Timeline.Core.less";
+@import "../VMM.Slider.less";
+@import "../VMM.Timeline.TimeNav.less";
+
+// Typography
+@import "../Typography.less";
+
+// Grid system and page structure
+@import "../VMM.Timeline.Tooltip.less";
+
+
+/* MEDIA QUERIES
+================================================== */
+
+/* Mobile and iPhone
+================================================== */
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	
+}
+
+/* BELOW 600px
+================================================== */
+
+@media (max-width: 600px) {
+	.slider {
+		.slider-item {
+			.content {
+				.content-container {
+					display:block;
+					.text {
+						width:100%;
+						max-width:100%;
+						min-width:120px;
+						display:block;
+						.container {
+							display:block;
+						}
+					}
+					.media {
+						width:100%;
+						min-width:50%;
+						float: none;
+						.media-wrapper {
+							margin-left:0px;
+							margin-right:0px;
+							width:100%;
+							display:block;
+							.media-container {
+								img, iframe {
+									width:100%;
+									//max-height:350px;
+								}
+							}
+						}
+					}
+					.media.text-media {
+						.media-wrapper {
+							.media-container {
+								border: none;
+								background-color: @white;
+							}
+						}
+					}
+				}
+				.content-container.layout-text {
+					
+				}
+				.content-container.layout-media {
+					
+				}
+			}
+		}
+	}
+	
+}
