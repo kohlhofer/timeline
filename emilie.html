@@ -2,33 +2,33 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Timeline Google Spreadsheet Template</title>
-		<meta name="description" content="Template Description">
-
-		<style>
-			html, body {
-				height:100%;
-				padding: 0px;
-				margin: 0px;
-			}
-			#timeline-embed{
-				margin:0px !important;
-				border:0px solid #CCC !important;
-				padding:0px !important;
-				-webkit-border-radius:0px !important;
-				-moz-border-radius:0px !important;
-				border-radius:0px !important;
-				-moz-box-shadow:0 0px 0px rgba(0, 0, 0, 0.25) !important;
-				-webkit-box-shadow:0 0px 0px rgba(0, 0, 0, 0.25) !important;
-				box-shadow:0px 0px 0px rgba(0, 0, 0, 0.25) !important;
-			}
-			
-		</style>
+		<title>Emilie's Timeline</title>
+		<meta name="description" content="A timeline for Emilie">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap-tooltip.js"></script>
+		<script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
 		
+	 <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+      
 	</head>
 
 	<body>
 		<!-- BEGIN Timeline Embed -->
+		<div class="container">
+			<div id="navigation">
+					<div id="linkBar">
+					  <a data-toggle="modal" href="#about">About</a>
+					  <h1 class="pull-left">Emilie's Timeline</h1>
+					</div>
+			</div>		
+		</div>
 		<div id="timeline-embed"></div>
 		<script type="text/javascript">
 		    var timeline_config = {
@@ -42,5 +42,20 @@
 		</script>
 		<script type="text/javascript" src="Timeline/timeline-embed.js"></script>
 		<!-- END Timeline Embed -->
+		
+		<div class="modal hide fade" id="about">
+		  <div class="modal-header">
+		    <h3>About timeline</h3>
+		  </div>
+		  <div class="modal-body">
+		    <p>Created by Alexander <a href="http://kohlhofer.com" target="new">Kohlhofer</a>. Sources are <a href="https://github.com/kohlhofer/timeline" target="new">available on Github</a>.</p>
+				<p>Created with <a href="http://twitter.github.com/bootstrap/index.html" target="new">Bootstrap</a> and <a href="http://timeline.verite.co/" target="new">Timeline</a>. Content is powered by <a href="https://docs.google.com/spreadsheet/pub?key=0AggSciHmwiFodHBWSFJoMERWYUI4Ynk1eTE1N2U2Mnc&output=html" target="new">Google Docs</a>.</p>
+				
+		  </div>
+		  <div class="modal-footer">
+		    <button class="btn btn-success" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+		
 	</body>
 </html>
