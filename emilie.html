@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Emilie's Timeline</title>
-		<meta name="description" content="A timeline for Emilie">
+		<meta name="description" content="A timeline application by Alexander Kohlhofer">
 		<link href="css/main.css" rel="stylesheet">
 		<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap-tooltip.js"></script>
@@ -20,7 +20,7 @@
 	</head>
 
 	<body>
-		<!-- BEGIN Timeline Embed -->
+		
 		<div class="container">
 			<div id="navigation">
 					<div id="linkBar">
@@ -29,6 +29,8 @@
 					</div>
 			</div>		
 		</div>
+		
+		<!-- BEGIN Timeline Embed -->
 		<div id="timeline-embed"></div>
 		<script type="text/javascript">
 		    var timeline_config = {
@@ -45,12 +47,12 @@
 		
 		<div class="modal hide fade" id="about">
 		  <div class="modal-header">
-		    <h3>About timeline</h3>
+		    <h3>About this Timeline</h3>
 		  </div>
 		  <div class="modal-body">
-		    <p>Created by Alexander <a href="http://kohlhofer.com" target="new">Kohlhofer</a>. Sources are <a href="https://github.com/kohlhofer/timeline" target="new">available on Github</a>.</p>
-				<p>Created with <a href="http://twitter.github.com/bootstrap/index.html" target="new">Bootstrap</a> and <a href="http://timeline.verite.co/" target="new">Timeline</a>. Content is powered by <a href="https://docs.google.com/spreadsheet/pub?key=0AggSciHmwiFodHBWSFJoMERWYUI4Ynk1eTE1N2U2Mnc&output=html" target="new">Google Docs</a>.</p>
-				
+		    <p>This site was created by <a href="http://kohlhofer.com" target="new">Alexander Kohlhofer</a>. Feel free to check out the <a href="https://github.com/kohlhofer/timeline" target="new">source and setup</a>.</p>
+		    <p>Retrieving content from a public Google Document the application automatically generates an interactive timeline. This happens in the client without any server side code and relies entirely on <a href="http://timeline.verite.co/" target="new">Timeline</a> to do the heavy lifting. It uses some <a href="http://twitter.github.com/bootstrap/index.html" target="new">Bootstrap</a> magic, too. The latest versions of these packages are integrated as submodules.</p>
+		    <p>This site was build in a single day and is totally free (free software, free <a href="http://pages.github.com/" target="new">hosting</a>, free everything). You should make one, too.</p>
 		  </div>
 		  <div class="modal-footer">
 		    <button class="btn btn-success" data-dismiss="modal">Close</button>
